@@ -11,8 +11,8 @@ def index():
 def index1():
     return "И на Марсе будут яблони цвести!"
 
-@app.route('/promotion')
-def index2():
+@app.route('/image_mars')
+def index3():
     with open('templates/index.html', 'r', encoding='utf-8') as stream:
         return stream.read()
 
