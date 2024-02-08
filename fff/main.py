@@ -4,8 +4,15 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index')
 def index():
+    return "Миссия Колонизация Марса"
+
+@app.route('/index')
+def index1():
+    return "И на Марсе будут яблони цвести!"
+
+@app.route('/promotion')
+def index2():
     with open('templates/index.html', 'r', encoding='utf-8') as stream:
         return stream.read()
 
